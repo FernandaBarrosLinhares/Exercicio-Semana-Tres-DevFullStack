@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Veiculo</title>
+</head>
+<body>
+ 
+<nav>
+    <a href="#index.html"> <li>Pagina Inicial</li></a>
+    <a href="Marca.html"><li>Marca</li></a>
+    <a href="Modelo.html"><li>Modelo</li></a>
+    <a href="#Veiculo.html"><li>Veiculo</li></a>
+</nav>
+
+
+<!--8 Adicione os campos (elementos necessários)
+um select options para escolher uma modelo
+link da imagem (opcional criação de upload para salvar a imagem + diretorio)
+cor
+km
+valor
+Crie ação do botão submit do formulário e vincule com a função criada anteriormente.-->
+<h1>Veiculos</h1>
+
+        <form action="index.html#vehicle">
+            <label for="model">Marca:</label>
+            <select name="model" id="model"></select>
+                <option value="207">207</option>
+                <option value="chevete">Chevete</option>
+                <option value="tucson">Tucson</option>
+                <option value="argo">Argo</option>
+                <option value="fiesta">Fiesta</option> 
+            </select>
+            <label for="image">Imagem</label>
+            <input type="file" name="image" id="image"/>
+            <label for="color">Cor</label>
+            <input type="text" name="color" id="color"/>
+            <label for="km">Km</label>
+            <input type="text" inputmode="numeric" name="Km" id="Km"/>
+            <label for="value">Valor</label>
+            <input type="text" inputmode="numeric" name="value" id="value"/>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </body>
+</html>
